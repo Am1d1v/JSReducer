@@ -11,3 +11,8 @@ function reducer(state, action){
     return state;
 }
 
+let newState =  reducer(initialState, {type: 'Add_Name', payload: 'Dima'});
+console.log(newState);
+
+newState =  reducer(newState, {type: 'Add_Name', payload: 'Alice'});
+console.log(newState);
